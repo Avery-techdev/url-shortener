@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "poppins-regular";
+  src: url("../public/fonts/poppins-v19-latin-500.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../public/fonts/poppins-v19-latin-700.woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+.h1 {
+  @apply text-very-dark-blue font-poppins-bold text-h1;
+}
+
+.h2 {
+  @apply text-very-dark-blue font-poppins-bold text-h2;
+}
+
+.h3 {
+  @apply text-grayish-violet font-poppins-regular text-h3;
+}
+
+.h4 {
+  @apply text-white font-poppins-bold text-h4;
+}
+
+.h5 {
+  @apply text-grayish-violet font-poppins-regular text-h5;
+}
+
+.text-p {
+  @apply text-grayish-violet font-poppins-regular text-body;
+}
