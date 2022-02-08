@@ -33,7 +33,11 @@ module.exports = {
       hd: "1920px",
       "4k": "3000px",
     },
-    extend: {},
+    extend: {
+      transformOrigin: {
+        "1px": "1px",
+      },
+    },
   },
   variants: {
     extend: {},
