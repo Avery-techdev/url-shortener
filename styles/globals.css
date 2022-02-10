@@ -36,23 +36,23 @@
   @apply text-grayish-violet font-poppins-regular text-h3;
 }
 
-.h3 {
-  @apply text-grayish-violet font-poppins-regular text-h3Mobile;
+.h3Mobile {
+  @apply text-white font-poppins-regular text-h3Mobile;
 }
 
 .h4 {
   @apply text-white font-poppins-bold text-h4;
 }
 
-.h4 {
-  @apply text-white font-poppins-bold text-h4Mobile;
+.h4Mobile {
+  @apply text-grayish-violet font-poppins-bold text-h4Mobile;
 }
 
 .h5 {
   @apply text-grayish-violet font-poppins-regular text-h5;
 }
 
-.h5 {
+.h5Mobile {
   @apply text-grayish-violet font-poppins-regular text-h5Mobile;
 }
 

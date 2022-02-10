@@ -12,8 +12,8 @@ export default function Navbar() {
   return (
     <div>
       <div className="w-full h-12 bg-blue-500 xl:px-40">
-        <ul className="my-10 w-full text-p">
-          <li className="pr-3 inline-block relative xl:top-3">
+        <ul className="my-10 w-full p">
+          <li className="px-3 inline-block relative xl:top-3">
             <Image
               src={`${require("../../public/svgs/Shortly.svg")}`}
               width="120px"
