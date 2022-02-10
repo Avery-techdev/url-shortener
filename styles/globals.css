@@ -20,20 +20,40 @@
   @apply text-very-dark-blue font-poppins-bold text-h1;
 }
 
+.h1Mobile {
+  @apply text-very-dark-blue font-poppins-bold text-h1Mobile;
+}
+
 .h2 {
   @apply text-very-dark-blue font-poppins-bold text-h2;
+}
+
+.h2Mobile {
+  @apply text-very-dark-blue font-poppins-bold text-h2Mobile;
 }
 
 .h3 {
   @apply text-grayish-violet font-poppins-regular text-h3;
 }
 
+.h3 {
+  @apply text-grayish-violet font-poppins-regular text-h3Mobile;
+}
+
 .h4 {
   @apply text-white font-poppins-bold text-h4;
 }
 
+.h4 {
+  @apply text-white font-poppins-bold text-h4Mobile;
+}
+
 .h5 {
   @apply text-grayish-violet font-poppins-regular text-h5;
+}
+
+.h5 {
+  @apply text-grayish-violet font-poppins-regular text-h5Mobile;
 }
 
 .text-p {

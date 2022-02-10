@@ -24,6 +24,11 @@ module.exports = {
       h4: ["20px", "30px"],
       h5: ["18px", "32px"],
       body: ["15px", "26px"],
+      h1Mobile: ["42px", "48px"],
+      h2Mobile: ["28", "48px"],
+      h3Mobile: ["20px", "30px"],
+      h4Mobile: ["18px", "30px"],
+      h5Mobile: ["16px", "36px"],
     },
     screens: {
       sm: "375px",
