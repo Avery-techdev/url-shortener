@@ -11,9 +11,9 @@ export default function Navbar() {
   };
   return (
     <div>
-      <div className="w-full h-12 bg-blue-500 lg:px-40">
-        <ul className="my-10 px-6 w-full text-p">
-          <li className="px-3 inline-block relative lg:top-3">
+      <div className="w-full h-12 bg-blue-500 xl:px-40">
+        <ul className="my-10 w-full text-p">
+          <li className="pr-3 inline-block relative xl:top-3">
             <Image
               src={`${require("../../public/svgs/Shortly.svg")}`}
               width="120px"
@@ -21,12 +21,12 @@ export default function Navbar() {
               loader={Loader}
             />
           </li>
-          <li className="px-12 hidden lg:inline-block">Features</li>
-          <li className="pr-12 hidden lg:inline-block">Pricing</li>
-          <li className="pr-12 hidden lg:inline-block">Resources</li>
+          <li className="px-12 hidden xl:inline-block">Features</li>
+          <li className="pr-12 hidden xl:inline-block">Pricing</li>
+          <li className="pr-12 hidden xl:inline-block">Resources</li>
           <ul className="inline-block w-6/12 text-right">
-            <li className="pr-12 hidden lg:inline-block">Login</li>
-            <button className="hidden lg:inline-block bg-cyan py-1 rounded-full w-24 text-white">
+            <li className="pr-12 hidden xl:inline-block">Login</li>
+            <button className="hidden xl:inline-block bg-cyan py-1 rounded-full w-24 text-white">
               SignUp
             </button>
           </ul>
@@ -45,7 +45,7 @@ export default function Navbar() {
           ) : null}
         </ul>
         <button
-          className="lg:hidden absolute right-10 top-10"
+          className="xl:hidden absolute right-10 top-10"
           onClick={toggleHamburger}
         >
           <Hamburger isOpen={hamburgerOpen} />
