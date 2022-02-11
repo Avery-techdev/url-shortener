@@ -4,7 +4,7 @@ import { Loader } from "../ImageLoader/Loader";
 export default function Shortener() {
   return (
     <>
-      <div className="flex justify-center px-6 lg:mx-40 my-5 bg-shortener-pattern m-auto rounded-xl">
+      <div className="flex justify-center mx-6 px-6 lg:mx-40 my-5 bg-shortener-pattern m-auto rounded-xl">
         <form
           className=" w-full my-3 lg:mt-5 pb-3"
           id="shortener-form" /* onSubmit={handleSubmit} */
