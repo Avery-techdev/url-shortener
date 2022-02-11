@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="w-full h-12 bg-blue-500 xl:px-40">
         <ul className="my-10 w-full p">
           <li className="px-3 inline-block relative xl:top-3">
-            <a href="/">
+            <a href="#">
               <Image
                 src={`${require("../../public/svgs/Shortly.svg")}`}
                 width="120px"

@@ -17,6 +17,7 @@ export default function Home() {
         <a
           className=" text-cyan"
           target="_blank"
+          rel="noreferrer"
           href="https://github.com/Avery-techdev/url-shortener"
         >
           Open Source Code{" "}
