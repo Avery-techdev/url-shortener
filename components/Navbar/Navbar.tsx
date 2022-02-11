@@ -14,18 +14,28 @@ export default function Navbar() {
       <div className="w-full h-12 bg-blue-500 xl:px-40">
         <ul className="my-10 w-full p">
           <li className="px-3 inline-block relative xl:top-3">
-            <Image
-              src={`${require("../../public/svgs/Shortly.svg")}`}
-              width="120px"
-              height="32px"
-              loader={Loader}
-            />
+            <a href="/">
+              <Image
+                src={`${require("../../public/svgs/Shortly.svg")}`}
+                width="120px"
+                height="32px"
+                loader={Loader}
+              />
+            </a>
           </li>
-          <li className="px-12 hidden xl:inline-block">Features</li>
-          <li className="pr-12 hidden xl:inline-block">Pricing</li>
-          <li className="pr-12 hidden xl:inline-block">Resources</li>
+          <li className="px-12 hidden xl:inline-block">
+            <a href="#">Features</a>
+          </li>
+          <li className="pr-12 hidden xl:inline-block">
+            <a href="#">Pricing</a>
+          </li>
+          <li className="pr-12 hidden xl:inline-block">
+            <a href="#">Resources</a>
+          </li>
           <ul className="inline-block w-6/12 text-right">
-            <li className="pr-12 hidden xl:inline-block">Login</li>
+            <li className="pr-12 hidden xl:inline-block">
+              <a href="#">Login</a>
+            </li>
             <button className="hidden xl:inline-block bg-cyan py-1 rounded-full w-24 text-white">
               SignUp
             </button>
