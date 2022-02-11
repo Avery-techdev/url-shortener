@@ -45,7 +45,7 @@
 }
 
 .h4Mobile {
-  @apply text-grayish-violet font-poppins-bold text-h4Mobile;
+  @apply text-grayish-violet font-poppins-regular text-h4Mobile;
 }
 
 .h5 {

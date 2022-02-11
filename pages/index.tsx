@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Header from "../components/Header/Header";
+import Shortener from "../components/Shortener/Shortener";
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
         <link rel="icon" href="#" />
       </Head>
       <Navbar />
-      <div></div>
       <Header />
+      <Shortener/>
     </div>
   );
 }

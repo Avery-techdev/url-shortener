@@ -42,6 +42,9 @@ module.exports = {
       transformOrigin: {
         "1px": "1px",
       },
+      backgroundImage: {
+        'shortener-pattern': "url(/svgs/bg-shortener.svg)",
+      },
     },
   },
   variants: {
