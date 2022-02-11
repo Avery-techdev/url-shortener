@@ -12,7 +12,17 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
-      <Shortener/>
+      <Shortener />
+      <p className="text-center text-p">
+        <a
+          className=" text-cyan"
+          target="_blank"
+          href="https://github.com/Avery-techdev/url-shortener"
+        >
+          Open Source Code{" "}
+        </a>
+        by Annabell Hauschild
+      </p>
     </div>
   );
 }
