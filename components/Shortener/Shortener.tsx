@@ -3,7 +3,7 @@ import { Loader } from "../ImageLoader/Loader";
 
 export default function Shortener() {
   return (
-    <>
+    <div className="bg-gradient-to-t from-gray via-white to-white">
       <div className="flex justify-center mx-6 px-6 lg:mx-40 my-5 bg-shortener-pattern m-auto rounded-xl">
         <form
           className=" w-full my-3 lg:mt-5 pb-3"
@@ -25,6 +25,6 @@ export default function Shortener() {
           />
         </form>
       </div>
-    </>
+    </div>
   );
 }
