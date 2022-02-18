@@ -3,7 +3,7 @@ import { Loader } from "../ImageLoader/Loader";
 import { CardTypes } from "./cardTypes";
 import cardData from "./cards";
 
-export default function Statistics() {
+export default function Statistics(cards:CardTypes) {
   return (
     <div className="bg-light-gray px-6 py-20 z-0 relative">
       <h2 className="h2Mobile text-center mb-4">Advanced Statistics</h2>
@@ -18,8 +18,8 @@ export default function Statistics() {
         {" "}
       </div>
       <div className="lg:flex lg:justify-around">
-        {cardData.cards.map(({ topImage, headline, text }) => (
-          <div className="relative lg:w-1/4">
+        {cardData.cards.map(({ topImage, headline, text}, index) => (
+          <div className="relative lg:w-1/4" key={index}>
             <div className=" bg-dark-violet relative z-10 rounded-full mx-auto mt-12 w-24 h-24">
               <div className=" relative top-7 left-7">
                 <Image
