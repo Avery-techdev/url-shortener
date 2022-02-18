@@ -3,7 +3,7 @@ import { Loader } from "../ImageLoader/Loader";
 import { CardTypes } from "./cardTypes";
 import cardData from "./cards";
 
-export default function Statistics(cards: CardTypes) {
+export default function Statistics() {
   return (
     <div className="bg-light-gray px-6 py-20 z-0 relative">
       <h2 className="h2Mobile text-center mb-4">Advanced Statistics</h2>
