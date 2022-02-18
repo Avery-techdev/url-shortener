@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Header from "../components/Header/Header";
 import Shortener from "../components/Shortener/Shortener";
+import Statistics from "../components/Statistics/Statistics";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Shortener />
+      <Statistics />
       <p className="text-center text-p">
         <a
           className=" text-cyan"

@@ -59,3 +59,7 @@
 .text-p {
   @apply text-grayish-violet font-poppins-regular text-body;
 }
+
+.headCards {
+  @apply text-dark-violet font-poppins-bold text-center text-headCards
+}
