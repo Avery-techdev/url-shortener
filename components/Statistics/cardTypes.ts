@@ -3,5 +3,6 @@ export type CardTypes = {
     topImage : string
     headline: string
     text: string
+    marginTop: string
   }[]
 }
