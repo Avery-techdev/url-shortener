@@ -5,7 +5,7 @@ import cardData from "./cards";
 
 export default function Statistics() {
   return (
-    <div className="bg-light-gray px-6 py-20 z-0 relative xl:px-40">
+    <div className="bg-light-gray px-6 pt-20 z-0 relative xl:px-40">
       <h2 className="h2Mobile text-center mb-4">Advanced Statistics</h2>
       <h5 className="h5Mobile text-center lg:w-1/3 lg:mx-auto mb-12">
         Track how your links are performing across the web with our advanced

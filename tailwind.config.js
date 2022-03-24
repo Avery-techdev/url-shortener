@@ -46,6 +46,7 @@ module.exports = {
       },
       backgroundImage: {
         'shortener-pattern': "url(/svgs/bg-shortener.svg)",
+        'boost-background': "url(/svgs/BoostBackground.svg)"
       },
     },
   },
