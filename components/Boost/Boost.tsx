@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { Loader } from "../ImageLoader/Loader";
-
 export default function Boost() {
   return (
     <div className=" bg-boost-background py-20 text-center">

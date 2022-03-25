@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import Shortener from "../components/Shortener/Shortener";
 import Statistics from "../components/Statistics/Statistics";
 import Boost from "../components/Boost/Boost";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Shortener />
       <Statistics />
       <Boost />
+      <Footer />
       <p className="text-center text-p">
         <a
           className=" text-cyan"
