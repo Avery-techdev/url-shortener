@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Loader } from "../ImageLoader/Loader";
 import Hamburger from "./Hamburger";
+import Logo from "../Icons/Logo"
 
 export default function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -15,12 +16,7 @@ export default function Navbar() {
         <ul className="my-10 w-full p">
           <li className="px-3 inline-block relative xl:top-3">
             <a href="#">
-              <Image
-                src={`${require("../../public/svgs/Shortly.svg")}`}
-                width="120px"
-                height="32px"
-                loader={Loader}
-              />
+              <Logo className=" fill-very-dark-blue" />
             </a>
           </li>
           <li className="px-12 hidden xl:inline-block">
