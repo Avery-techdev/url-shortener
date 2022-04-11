@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Loader } from "../ImageLoader/Loader";
 import Hamburger from "./Hamburger";
-import Logo from "../Icons/Logo"
+import Logo from "../Icons/Logo";
 
 export default function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
     setHamburgerOpen(!hamburgerOpen);
   };
   return (
-    <div>
+    <header>
       <div className="w-full h-12 bg-blue-500 xl:px-40">
         <ul className="my-10 w-full p">
           <li className="px-3 inline-block relative xl:top-3">
@@ -53,10 +53,11 @@ export default function Navbar() {
         <button
           className="xl:hidden absolute right-10 top-10"
           onClick={toggleHamburger}
+          aria-label="Open the menu"
         >
           <Hamburger isOpen={hamburgerOpen} />
         </button>
       </div>
-    </div>
+    </header>
   );
 }

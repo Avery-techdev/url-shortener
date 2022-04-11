@@ -4,7 +4,7 @@ import { Loader } from "../ImageLoader/Loader";
 export default function Header() {
   return (
     <>
-      <div className="flex px-6 lg:px-40 my-20 items-center flex-row flex-wrap justify-end">
+      <section className="flex px-6 lg:px-40 my-20 items-center flex-row flex-wrap justify-end">
         <div className="text-center lg:text-left order-1 lg:order-0 lg:w-1/2">
           <h1 className="h1Mobile py-5 font-bold lg:w-10/12">
             More than just shorter links
@@ -23,9 +23,10 @@ export default function Header() {
             width="733px"
             height="482px"
             loader={Loader}
+            alt="a person is working with a computer"
           />
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -4,7 +4,7 @@ import { Loader } from "../ImageLoader/Loader";
 
 export default function Footer() {
   return (
-    <div className=" bg-very-dark-violet lg:flex lg:justify-between py-14 lg:px-20 text-white text-center lg:text-left">
+    <footer className=" bg-very-dark-violet lg:flex lg:justify-between py-14 lg:px-20 text-white text-center lg:text-left">
       <Logo className=" fill-white block mx-auto mb-12 lg:w-1/4" />
       <ul className=" text-h5Mobile lg:w-1/5">
         <li className=" font-bold mb-4 text-h4Mobile">Features</li>
@@ -32,6 +32,7 @@ export default function Footer() {
             width="24px"
             height="24px"
             loader={Loader}
+            alt="Logo Facebook"
           />
         </li>
         <li className=" inline-block mx-3">
@@ -40,6 +41,7 @@ export default function Footer() {
             width="24px"
             height="24px"
             loader={Loader}
+            alt="Logo Twitter"
           />
         </li>
         <li className=" inline-block mx-3">
@@ -48,6 +50,7 @@ export default function Footer() {
             width="24px"
             height="24px"
             loader={Loader}
+            alt="Logo Pinterest"
           />
         </li>
         <li className=" inline-block mx-3">
@@ -56,9 +59,10 @@ export default function Footer() {
             width="24px"
             height="24px"
             loader={Loader}
+            alt="Logo Instagram"
           />
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }

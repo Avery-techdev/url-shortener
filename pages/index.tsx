@@ -15,7 +15,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
-      <Shortener />
+      <div className=" bg-light-gray">
+        <Shortener />
+      </div>
       <Statistics />
       <Boost />
       <Footer />

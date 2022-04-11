@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Loader } from "../ImageLoader/Loader";
-import { CardTypes } from "./cardTypes";
-import cardData from "./cards";
+import { CardTypes } from "./components/cardTypes";
+import cardData from "./components/cards";
 
 export default function Statistics() {
   return (
@@ -28,6 +28,7 @@ export default function Statistics() {
                     width="40px"
                     height="40px"
                     loader={Loader}
+                    alt={headline}
                   />
                 </div>
               </div>
