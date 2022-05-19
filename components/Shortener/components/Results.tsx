@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 type Props = {
+  errorLink: boolean;
   results: {
     ok: boolean;
     result: {
@@ -13,7 +14,7 @@ type Props = {
   };
 };
 
-export default function Results({ results }: Props) {
+export default function Results({ results, errorLink }: Props) {
   const [copySuccess, setCopySuccess] = useState("Copy");
   const [changeBg, setChangeBg] = useState("bg-cyan");
 
@@ -26,7 +27,7 @@ export default function Results({ results }: Props) {
   if (results) {
     return (
       <div className=" bg-white mx-6 lg:mx-40 mt-6 py-5 text-h5Mobile lg:text-h4 leading-9 rounded lg:flex justify-between">
-        {results.ok ? (
+        {errorLink ? (
           <>
             <div className="px-6 font-poppins-bold">
               {results.result.original_link}

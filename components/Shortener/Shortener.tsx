@@ -9,13 +9,12 @@ import { useState, useEffect } from "react";
 export default function Shortener() {
   const [change, setChange] = useState("");
   const [results, setResults] = useState(null);
+  const [errorLink, setErrorLink] = useState(false);
 
-    useEffect(() => {
-      localStorage.setItem("results", JSON.stringify(results));
-    }, [results]);
 
   function handleResponse(response) {
     setResults(response.data)
+    setErrorLink(response.data.ok)
     console.log(response.data);
   }
 
@@ -56,7 +55,7 @@ export default function Shortener() {
         </div>
       </div>
       <div className=" bg-light-gray">
-          <Results results={results} />
+          <Results results={results} errorLink={errorLink} />
       </div>
     </>
   );
