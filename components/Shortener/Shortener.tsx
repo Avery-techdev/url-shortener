@@ -40,9 +40,10 @@ export default function Shortener() {
 
   return (
     <>
-      <div className="bg-gradient-to-t from-light-gray via-white to-white">
+      <section className="bg-gradient-to-t from-light-gray via-white to-white">
         <div className=" flex justify-center mx-6 px-6 lg:mx-40 my-5 lg:my-0 bg-shortener-pattern m-auto rounded-xl">
           <form
+          role="search"
             className=" w-full my-3 lg:mt-5 pb-3"
             id="shortener-form"
             onSubmit={shorten}
@@ -63,10 +64,10 @@ export default function Shortener() {
             />
           </form>
         </div>
-      </div>
-      <div className=" bg-light-gray">
+      </section>
+      <section className=" bg-light-gray">
         <Results results={results} errorMessage={errorMessage} />
-      </div>
+      </section>
     </>
   );
 }

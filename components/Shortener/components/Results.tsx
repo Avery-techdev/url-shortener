@@ -25,7 +25,7 @@ export default function Results({ results, errorMessage }: Props) {
 
   if (results) {
     return (
-      <div className=" bg-white mx-6 lg:mx-40 mt-6 py-5 text-h5Mobile lg:text-h4 leading-9 rounded lg:flex justify-between">
+      <section className=" bg-white mx-6 lg:mx-40 mt-6 py-5 text-h5Mobile lg:text-h4 leading-9 rounded lg:flex justify-between">
         <>
           <div className="px-6 font-poppins-bold">
             {results.result.original_link}
@@ -45,15 +45,15 @@ export default function Results({ results, errorMessage }: Props) {
             </CopyToClipboard>
           </div>
         </>
-      </div>
+      </section>
     );
   } else {
     return (
-      <div>
+      <section>
         <p className=" text-red font-bold mx-6 lg:mx-40 mt-6 text-h5Mobile lg:text-h4 leading-9 rounded lg:flex justify-between">
           {errorMessage}
         </p>
-      </div>
+      </section>
     );
   }
 }

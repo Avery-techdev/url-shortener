@@ -5,7 +5,7 @@ import cardData from "./components/cards";
 
 export default function Statistics() {
   return (
-    <div className="bg-light-gray px-6 pt-20 z-0 relative xl:px-40">
+    <section className="bg-light-gray px-6 pt-20 z-0 relative xl:px-40">
       <h2 className="h2Mobile text-center mb-4">Advanced Statistics</h2>
       <h5 className="h5Mobile text-center lg:w-1/3 lg:mx-auto mb-12">
         Track how your links are performing across the web with our advanced
@@ -17,7 +17,7 @@ export default function Statistics() {
       <div className=" lg:border-b-8 lg:border-cyan lg:absolute lg:top-1/2 lg:left-1/4 lg:w-1/2">
         {" "}
       </div>
-      <div className="lg:flex lg:justify-between">
+      <section className="lg:flex lg:justify-between">
         {cardData.cards.map(
           ({ topImage, headline, text, marginTop }, index) => (
             <div className={`relative lg:w-1/4 ${marginTop}`} key={index}>
@@ -41,7 +41,7 @@ export default function Statistics() {
             </div>
           )
         )}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }

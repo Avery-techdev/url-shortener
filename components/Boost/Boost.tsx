@@ -1,6 +1,6 @@
 export default function Boost() {
   return (
-    <section className=" bg-boost-background py-20 text-center">
+    <section className="bg-boost-background py-20 text-center">
       <h2 className=" text-h2Mobile lg:text-h2 font-bold text-white">
         Boost your links today
       </h2>
