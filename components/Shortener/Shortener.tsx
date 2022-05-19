@@ -11,6 +11,10 @@ export default function Shortener() {
   const [change, setChange] = useState("");
   const [results, setResults] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
+  const inputstyle =
+    errorMessage === "please enter a valid URL"
+      ? "border-red border-8 placeholder:text-red"
+      : "";
 
 
   function handleResponse(response) {
@@ -25,6 +29,7 @@ export default function Shortener() {
   }
 
   function handleChange(e) {
+    e.preventDefault();
     setChange(e.target.value);
     if (validator.isURL(e.target.value)) {
       return null
@@ -46,7 +51,7 @@ export default function Shortener() {
               type="search"
               placeholder="Shorten a link here..."
               autoFocus
-              className="my-3 py-1 pl-5 h5Mobile rounded w-full lg:w-3/4 inline"
+              className={`my-3 py-1 pl-5 h5Mobile rounded w-full lg:w-3/4 inline ${inputstyle}`}
               onChange={handleChange}
             />
 
