@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Loader } from "../ImageLoader/Loader";
 import Results from "./components/Results";
 import axios from "axios";
+import validator from "validator";
 import { useState, useEffect } from "react";
 
 
@@ -9,12 +10,11 @@ import { useState, useEffect } from "react";
 export default function Shortener() {
   const [change, setChange] = useState("");
   const [results, setResults] = useState(null);
-  const [errorLink, setErrorLink] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
 
   function handleResponse(response) {
     setResults(response.data)
-    setErrorLink(response.data.ok)
     console.log(response.data);
   }
 
@@ -24,8 +24,13 @@ export default function Shortener() {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  function handleChange(event) {
-    setChange(event.target.value);
+  function handleChange(e) {
+    setChange(e.target.value);
+    if (validator.isURL(e.target.value)) {
+      return null
+    } else {
+      setErrorMessage("Is Not Valid URL");
+    }
   }
 
   return (
@@ -55,7 +60,7 @@ export default function Shortener() {
         </div>
       </div>
       <div className=" bg-light-gray">
-          <Results results={results} errorLink={errorLink} />
+        <Results results={results} errorMessage={errorMessage} />
       </div>
     </>
   );
