@@ -2,13 +2,17 @@ import Image from "next/image";
 import { Loader } from "../ImageLoader/Loader";
 import Results from "./components/Results";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
 export default function Shortener() {
   const [change, setChange] = useState("");
   const [results, setResults] = useState(null);
+
+    useEffect(() => {
+      localStorage.setItem("results", JSON.stringify(results));
+    }, [results]);
 
   function handleResponse(response) {
     setResults(response.data)
@@ -52,7 +56,7 @@ export default function Shortener() {
         </div>
       </div>
       <div className=" bg-light-gray">
-        <Results results={results} />
+          <Results results={results} />
       </div>
     </>
   );
