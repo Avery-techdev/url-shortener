@@ -45,10 +45,15 @@ export default function Results({ results, errorMessage }: Props) {
             </CopyToClipboard>
           </div>
         </>
-        <p className=" text-red bg-cyan">{errorMessage}</p>
       </div>
     );
   } else {
-    return null;
+    return (
+      <div>
+        <p className=" text-red font-bold mx-6 lg:mx-40 mt-6 text-h5Mobile lg:text-h4 leading-9 rounded lg:flex justify-between">
+          {errorMessage}
+        </p>
+      </div>
+    );
   }
 }

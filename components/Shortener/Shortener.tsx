@@ -29,7 +29,7 @@ export default function Shortener() {
     if (validator.isURL(e.target.value)) {
       return null
     } else {
-      setErrorMessage("Is Not Valid URL");
+      setErrorMessage("please enter a valid URL");
     }
   }
 
