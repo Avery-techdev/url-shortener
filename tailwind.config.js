@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       cyan: "hsl(180, 66%, 49%)",
+      "light-cyan": "#9AE3E3",
       "dark-violet": "hsl(257, 27%, 26%)",
       red: "hsl(0, 87%, 67%)",
       gray: "hsl(0, 0%, 75%)",
@@ -45,8 +46,8 @@ module.exports = {
         "1px": "1px",
       },
       backgroundImage: {
-        'shortener-pattern': "url(/svgs/bg-shortener.svg)",
-        'boost-background': "url(/svgs/BoostBackground.svg)"
+        "shortener-pattern": "url(/svgs/bg-shortener.svg)",
+        "boost-background": "url(/svgs/BoostBackground.svg)",
       },
     },
   },

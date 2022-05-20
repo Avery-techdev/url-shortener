@@ -32,7 +32,7 @@ export default function Navbar() {
             <li className="pr-12 hidden xl:inline-block">
               <a href="#">Login</a>
             </li>
-            <button className="hidden xl:inline-block bg-cyan py-1 rounded-full w-24 text-white">
+            <button className="hidden xl:inline-block bg-cyan hover:bg-light-cyan py-1 rounded-full w-24 text-white hover:text-dark-violet">
               SignUp
             </button>
           </ul>
@@ -44,7 +44,7 @@ export default function Navbar() {
               <li className="py-5">Resources</li>
               <hr className="border-grayish-violet opacity-30 w-10/12 m-auto" />
               <li className="py-5">Login</li>
-              <button className=" bg-cyan w-10/12 mb-8 py-1 rounded-full">
+              <button className=" bg-cyan hover:bg-light-cyan hover:text-dark-violet w-10/12 mb-8 py-1 rounded-full">
                 SignUp
               </button>
             </div>

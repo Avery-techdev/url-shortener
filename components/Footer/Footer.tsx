@@ -12,13 +12,19 @@ export default function Footer() {
         <li className="mb-2">Branded Links</li>
         <li>Analytics</li>
       </ul>
-      <ul aria-label="resources" className=" text-h5Mobile mt-10 lg:mt-0 lg:w-1/5">
+      <ul
+        aria-label="resources"
+        className=" text-h5Mobile mt-10 lg:mt-0 lg:w-1/5"
+      >
         <li className=" font-bold mb-4 text-h4Mobile">Resources</li>
         <li className=" mb-2">Blog</li>
         <li className="mb-2">Developers</li>
         <li>Support</li>
       </ul>
-      <ul aria-label="company" className=" text-h5Mobile mt-10 lg:mt-0 lg:w-1/5">
+      <ul
+        aria-label="company"
+        className=" text-h5Mobile mt-10 lg:mt-0 lg:w-1/5"
+      >
         <li className=" font-bold mb-4 text-h4Mobile">Company</li>
         <li className=" mb-2">About</li>
         <li className="mb-2">Our Team</li>

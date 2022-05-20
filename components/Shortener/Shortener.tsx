@@ -43,7 +43,7 @@ export default function Shortener() {
       <section className="bg-gradient-to-t from-light-gray via-white to-white">
         <div className=" flex justify-center mx-6 px-6 lg:mx-40 my-5 lg:my-0 bg-shortener-pattern m-auto rounded-xl">
           <form
-          role="search"
+            role="search"
             className=" w-full my-3 lg:mt-5 pb-3"
             id="shortener-form"
             onSubmit={shorten}
@@ -59,7 +59,7 @@ export default function Shortener() {
             <input
               type="submit"
               value="Shorten It!"
-              className="bg-cyan py-2 rounded w-full lg:w-1/5 lg:ml-5 font-poppins-bold text-h4Mobile text-white"
+              className="bg-cyan hover:bg-light-cyan py-2 rounded w-full lg:w-1/5 lg:ml-5 font-poppins-bold text-h4Mobile text-white hover:text-dark-violet"
               id="search-form"
             />
           </form>
